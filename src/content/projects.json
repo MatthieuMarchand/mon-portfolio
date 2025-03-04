@@ -1,0 +1,331 @@
+[
+  {
+    "title": "Careline Covid",
+    "slug": "careline-covid",
+    "group": "applications-web",
+    "paragraphs": [
+      "Dans le cadre de mon alternance chez Feelity, j'ai contribué au développement de la partie back-end de Careline Covid.",
+      "Je me suis notamment occupé de créer des tests coté back-end en créant des tests fonctionnels et unitaires."
+    ],
+    "links": [
+      {
+        "label": "En savoir plus",
+        "url": "https://www.feelity.fr/references-projets-numeriques-digitaux/careline-covid/"
+      }
+    ]
+  },
+  {
+    "title": "Cap Client",
+    "slug": "cap-client",
+    "group": "applications-web",
+    "paragraphs": [
+      "Dans le cadre de mon alternance à La Banque Postale, je travaille sur le développement d’une partie de l’application Cap Client.",
+      "Ce logiciel est destiné aux conseillers bancaires et les accompagne notamment dans la gestion de leurs rendez-vous et interactions avec les clients."
+    ],
+    "links": []
+  },
+  {
+    "title": "Harmonie Climat",
+    "slug": "harmonie-climat",
+    "group": "applications-web",
+    "paragraphs": [
+      "A deux, sur notre temps personnel, nous nous sommes amusé à créer une application de météo.",
+      "Je me suis principalement occupé du développement de cette application.",
+      "Cette application m'a servi plusieurs semaine à consulter la météo !"
+    ],
+    "links": [
+      {
+        "label": "L'application web",
+        "url": "https://harmonie-climat.netlify.app/"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/MatthieuMarchand/weatherApp"
+      }
+    ]
+  },
+  {
+    "title": "B'Art Deaux",
+    "slug": "b-art-deaux",
+    "group": "applications-web",
+    "paragraphs": [
+      "Dans le cadre de mes études, à quatre, nous devons réaliser notre premier application web avec une base de données.",
+      "Je me suis occupé de développer tout le back-end de ce projet.",
+      "Ce projet me donnera l'envie de faire une alternance en tant que développeur back-end."
+    ],
+    "links": [
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/thaisontranquang/blogart_g10"
+      }
+    ]
+  },
+  {
+    "title": "Salon Le Colibri",
+    "slug": "le-colibri",
+    "group": "sites-web",
+    "paragraphs": [
+      "L’un de mes premiers projets en tant qu’auto-entrepreneur : ma coiffeuse ouvre son salon et me confie la création de son site web.",
+      "Avec Loïc Leforestier, nous concevons le design du site et réalisons une séance photo dans son salon.",
+      "Je prends ensuite en charge le développement du site."
+    ],
+    "links": [
+      {
+        "label": "Salon Le Colibri",
+        "url": "https://salon-le-colibri.netlify.app/"
+      }
+    ]
+  },
+  {
+    "title": "Portfolio de Tom Wainberg",
+    "slug": "tom-wainberg",
+    "group": "sites-web",
+    "paragraphs": [
+      "Sur mon temps personnel, j'ai des développer le portfolio de Tom.",
+      "Portfolio designer par par Coralie Alexandru."
+    ],
+    "links": [
+      {
+        "label": "Voir le site",
+        "url": "https://tomwainberg.fr/"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/MatthieuMarchand/TomWainberg_Portfolio"
+      }
+    ]
+  },
+  {
+    "title": "Portfolio de Ilan Paillat",
+    "slug": "ilan-paillat",
+    "group": "sites-web",
+    "paragraphs": [
+      "Sur mon temps personnel, j'ai designer et développer le portfolio d'Ilan Paillat"
+    ],
+    "links": [
+      {
+        "label": "Voir le site",
+        "url": "https://ilanpaillat.netlify.app/"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/MatthieuMarchand/portfolio-ilan-paillat"
+      }
+    ]
+  },
+  {
+    "title": "Digital Natives",
+    "slug": "digital-natives",
+    "group": "sites-web",
+    "paragraphs": [
+      "Chaque année, les étudiants au BUT MMI Bordeaux organisent un colloque numérique.",
+      "Dans le cadre de mes études, j'ai créé le site web qui archive les colloques organisés.",
+      "J'ai réaliser ce site avec le CMS Osuny."
+    ],
+    "links": [
+      {
+        "label": "Voir le site",
+        "url": "https://digitalnatives.mmibordeaux.com/"
+      }
+    ]
+  },
+  {
+    "title": "Nous n'avons pas numérisé.",
+    "slug": "Nous-navons-pas-numérisé",
+    "group": "sites-web",
+    "paragraphs": [
+      "Nous n'avions pas compris que parfois, le papier fonctionne mieux que le numérique.",
+      "Nous racontons l'histoire d'un de nos projets dans l'ordre chronologique en y décrivant les problèmes qu'on a rencontrés.",
+      "J'espère que notre retour d'expérience pourra aider d'autres personnes."
+    ],
+    "links": [
+      {
+        "label": "Voir le site",
+        "url": "https://nousnavonspasnumerise.mmibordeaux.com/"
+      }
+    ]
+  },
+  {
+    "title": "Rummikub",
+    "slug": "rummikub",
+    "group": "jeux-web",
+    "paragraphs": [
+      "Avec Arthaud Proust, après avoir fini une partie de Rummikub, nous décidons de numériser ce jeu.",
+      "En paire programmant, nous nous sommes occupés de développer la logique du jeu et d'écrire les tests."
+    ],
+    "links": [
+      {
+        "label": "Jouer au jeu",
+        "url": "https://rummikub.arthaud.dev/"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/rummikub-online/webapp"
+      }
+    ]
+  },
+  {
+    "title": "Memory Master",
+    "slug": "memory-master",
+    "group": "jeux-web",
+    "paragraphs": [
+      "Avec Loïc Leforestier, sur notre temps personnel, nous créons un memory numérique.",
+      "Créé ce jeu était un bon exercice d'algorithmie."
+    ],
+    "links": [
+      {
+        "label": "Jouer au jeu",
+        "url": "https://memory-masters.netlify.app/"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/MatthieuMarchand/Memory"
+      }
+    ]
+  },
+  {
+    "title": "Black Stories",
+    "slug": "black-stories",
+    "group": "jeux-web",
+    "paragraphs": [
+      "Sur mon temps personnel, j'ai aidé Loïc Leforestier en développent le jeu numérique qu'il avait imaginé."
+    ],
+    "links": [
+      {
+        "label": "Jouer au jeu",
+        "url": "https://black-stories-app.netlify.app/"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/MatthieuMarchand/black-stories-app"
+      }
+    ]
+  },
+  {
+    "title": "Maria",
+    "slug": "maria",
+    "group": "jeux-web",
+    "paragraphs": [
+      "Pour la soirée des Bacchanight 2024 du Musée des Beaux-Arts de Bordeaux, à 6 étudiants, nous avons réalisé une expérience intéractive.",
+      "Mêlant enquête et déduction, vous essaierez de sauver l'histoire des tableaux."
+    ],
+    "links": [
+      {
+        "label": "Jouer au jeu",
+        "url": "https://github.com/MatthieuMarchand/Maria"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://maria-bacchanight.netlify.app/"
+      }
+    ]
+  },
+  {
+    "title": "Bild",
+    "slug": "bild",
+    "group": "jeux-web",
+    "paragraphs": [
+      "A huit, dans le cadre d'un grand projet d'école de 2 semaines, nous décidons d'essayer d'aider une association s'occupant d'enfants autistes. Nous essayons notamment de numériser un de leur jeu éducatif.",
+      "Un projet complexe qui m'a permis d'apprendre à mener des entretiens utilisateurs et à mieux comprendre leurs besoins."
+    ],
+    "links": [
+      {
+        "label": "L'application web",
+        "url": "https://bild.ptitdom.fr/"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/EmmaGuillaume/ptitdom"
+      }
+    ]
+  },
+  {
+    "title": "Pokeruby",
+    "slug": "pokeruby",
+    "group": "jeux-web",
+    "paragraphs": [
+      "En duo, lors d'un projet d'école, nous découvrons Ruby on Rails et réalisons un Pokédex intéractif en 1 semaine.",
+      "C'est aussi la première fois que j'utilisais une API ouverte. Je l'utilise pour récupérer les Pokemon en fonction de ce que l'utilisateur écrit dans la barre de recherche."
+    ],
+    "links": [
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/HeloisePi/PokeRuby"
+      }
+    ]
+  },
+  {
+    "title": "Cib, au boulot !",
+    "slug": "cib-au-boulot",
+    "group": "jeux-ordinateur",
+    "paragraphs": [
+      "A quatre, pendant une Game Jam d'une durée de 2 jours, nous réalisons Ciboulot, un jeu vidéo téléchargable sur ordinateur.",
+      "Je me suis principalement occupé d'imaginer le jeu et son algorithme.",
+      "Pour réaliser ce projet nous avons utilisé Unity."
+    ],
+    "links": [
+      {
+        "label": "En savoir plus",
+        "url": "https://safirl.itch.io/cib-au-boulot"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/MatthieuMarchand/Ciboulot"
+      }
+    ]
+  },
+  {
+    "title": "Skulleton",
+    "slug": "skulleton",
+    "group": "jeux-ordinateur",
+    "paragraphs": [
+      "A quatre, lors d'un projet d'école, nous créons notre premier jeu vidéo avec Unity en 1 semaine."
+    ],
+    "links": [
+      {
+        "label": "Démo du jeu",
+        "url": "https://www.youtube.com/watch?v=EH6LeixpihY&ab_channel=Lo%C3%AFcLeforestier"
+      },
+      {
+        "label": "Jouer au jeu",
+        "url": "https://safirl.itch.io/skulleton"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/Safirl/Skullette"
+      }
+    ]
+  },
+  {
+    "title": "Nugget",
+    "slug": "nugget",
+    "group": "jeux-ordinateur",
+    "paragraphs": [
+      "A quatre, lors d'un projet d'école, nous créons notre deuxième jeu vidéo avec Unity en 1 semaine."
+    ],
+    "links": [
+      {
+        "label": "Jouer au jeu",
+        "url": "https://safirl.itch.io/nugget-game"
+      },
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/MatthieuMarchand/nugget"
+      }
+    ]
+  },
+  {
+    "title": "Premier projet en language C",
+    "slug": "projet-c",
+    "group": "jeux-ordinateur",
+    "paragraphs": [
+      "A trois, lors d'un projet d'école, nous réalisons une serrure connectée, application de gestion d'accès en C permettant de gérer l'accès et d'échanger des informations entre un serveur représentant la serrure et des clients (propriétaire ou locataire)."
+    ],
+    "links": [
+      {
+        "label": "Voir le repository GitHub",
+        "url": "https://github.com/MatthieuMarchand/TP-C-15-01-25"
+      }
+    ]
+  }
+]

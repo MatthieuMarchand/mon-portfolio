@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Sites Web",
+    "slug": "sites-web"
+  },
+  {
+    "name": "Applications Web",
+    "slug": "applications-web"
+  },
+  {
+    "name": "Jeux sur Ordinateur",
+    "slug": "jeux-ordinateur"
+  },
+  {
+    "name": "Jeux Web",
+    "slug": "jeux-web"
+  }
+]

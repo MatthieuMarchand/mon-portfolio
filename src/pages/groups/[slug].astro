@@ -1,0 +1,49 @@
+---
+import groups from "../../content/groups.json";
+import projects from "../../content/projects.json";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return groups.map((group) => ({
+    params: { slug: group.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+
+// Trouver le groupe correspondant
+const group = groups.find((g) => g.slug === slug);
+if (!group) {
+  throw new Error(`Groupe de projet introuvable : ${slug}`);
+}
+
+// Filtrer les projets liés à ce groupe
+const filteredProjects = projects.filter((p) => p.group === slug);
+---
+
+<Layout title={group.name} currentGroup={group}>
+  <ul>
+    {
+      filteredProjects.map((project) => (
+        <li>
+          <a href={`/projects/${project.slug}/`}>{project.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
+
+<style lang="scss">
+  @use "../../assets/styles/v";
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  a {
+    font-family: v.$font-primary-italic;
+    font-size: v.$font-size-large;
+  }
+</style>
