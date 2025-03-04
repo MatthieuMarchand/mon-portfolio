@@ -1,0 +1,54 @@
+@use "./v";
+
+html {
+  background: v.$color-white;
+
+  &.dark-mode {
+    filter: invert(1) hue-rotate(360deg);
+  }
+}
+
+body {
+  font-family: v.$font-primary;
+  font-size: v.$font-size-small;
+  color: v.$color-black;
+  line-height: 150%;
+}
+
+a {
+  color: v.$color-black;
+  text-decoration: unset;
+}
+
+.paragraphs {
+  b {
+    font-family: v.$font-primary-bolditalic;
+  }
+
+  p:not(:first-of-type) {
+    margin-top: 0.5rem;
+  }
+}
+
+div.links {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    width: fit-content;
+
+    &:not(:first-of-type) {
+      margin-top: 0.5rem;
+    }
+
+    span {
+      &.arrow {
+        font-family: v.$font-arrow-small;
+      }
+
+      &.link {
+        text-decoration: underline;
+      }
+    }
+  }
+}

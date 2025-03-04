@@ -1,0 +1,58 @@
+---
+import groups from "../content/groups.json";
+
+const { currentGroup } = Astro.props;
+---
+
+<header>
+  <nav>
+    <ul>
+      {
+        groups.map((group) => (
+          <li>
+            <a href={`/groups/${group.slug}/`}>
+              {/* <span>---></span> */}
+              {group.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  <button id="dark-mode-button" type="button"></button>
+</header>
+
+<style lang="scss">
+  @use "../assets/styles/v";
+
+  header {
+    display: flex;
+    justify-content: space-between;
+
+    @extend %font-secondary;
+
+    nav a {
+      text-transform: lowercase;
+
+      span {
+        font-family: v.$font-arrow-large;
+        font-size: 16px;
+      }
+    }
+
+    button {
+      height: 1rem;
+      width: 1rem;
+
+      background-color: v.$color-black;
+
+      border: unset;
+      border-radius: unset;
+
+      &.dark-mode {
+        transform: rotateZ(-225deg);
+      }
+    }
+  }
+</style>

@@ -1,22 +1,92 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+import "../assets/styles/reset.scss";
+import "../assets/styles/global.scss";
+
+const { title, currentGroup, showFooter = true } = Astro.props;
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title ? title : "Portfolio"} | Matthieu Marchand</title>
+  </head>
+  <body>
+    <main>
+      <Header currentGroup={currentGroup} />
+
+      <div>
+        <slot />
+      </div>
+
+      {showFooter && <Footer />}
+    </main>
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style lang="scss">
+  @use "../assets/styles/v";
+
+  main {
+    width: 100vw;
+    max-width: 35rem;
+    min-height: 100svh;
+
+    margin: auto auto;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2.5rem 1.5rem 0 1.5rem;
+    }
+  }
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById(
+      "dark-mode-button",
+    ) as HTMLButtonElement;
+
+    const portrait = document.getElementById("portrait") as HTMLImageElement;
+
+    // Vérifier si le mode sombre est activé dans le localStorage et appliquer la classe si nécessaire
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      document.documentElement.classList.add("dark-mode");
+      button.classList.add("dark-mode");
+      portrait?.classList.add("dark-mode");
+    }
+
+    button.addEventListener("click", function () {
+      // --> Toggle les classes "dark-mode"
+
+      // balise HTML
+      document.documentElement.style.transition = "all 0.5s ease-in-out";
+      document.documentElement.classList.toggle("dark-mode");
+
+      // button carré
+      button.style.transition = "all 1s ease";
+      button.classList.toggle("dark-mode");
+
+      // image portrait
+      portrait?.classList.toggle("dark-mode");
+
+      // Sauvegarder l'état du mode sombre dans localStorage
+      if (document.documentElement.classList.contains("dark-mode")) {
+        localStorage.setItem("dark-mode", "enabled");
+      } else {
+        localStorage.removeItem("dark-mode");
+      }
+    });
+  });
+</script>

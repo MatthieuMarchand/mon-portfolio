@@ -1,0 +1,63 @@
+---
+import projects from "../../content/projects.json";
+import groups from "../../content/groups.json";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+  }));
+}
+const { slug } = Astro.params;
+
+// Trouver le projet correspondant
+const project = projects.find((p) => p.slug === slug);
+if (!project) {
+  throw new Error(`Projet introuvable : ${slug}`);
+}
+
+// Trouver le groupe correspondant
+const group = groups.find((g) => g.slug === project.group);
+---
+
+<Layout title={project.title} currentGroup={group}>
+  <section>
+    <h1>{project.title}</h1>
+
+    <div class="paragraphs">
+      {project.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+
+    {
+      project.links.length > 0 && (
+        <div class="links">
+          {project.links.map((link) => (
+            <a target="_blank" href={link.url}>
+              <span class="arrow">--></span>
+              <span class="link">{link.label}</span>
+            </a>
+          ))}
+        </div>
+      )
+    }
+  </section>
+
+  <a class="retour" href={`/groups/${project.group}/`}>retour</a>
+</Layout>
+
+<style lang="scss">
+  @use "../../assets/styles/v";
+
+  section > * {
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-family: v.$font-primary-italic;
+    font-size: v.$font-size-large;
+  }
+
+  a.retour {
+    @extend %font-secondary;
+  }
+</style>
