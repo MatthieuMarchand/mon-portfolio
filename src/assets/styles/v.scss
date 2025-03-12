@@ -11,7 +11,7 @@ $font-arrow-small: "Inter_Light";
 $font-arrow-large: "Inter_ExtraLightItalic";
 
 $font-size-small: 12px;
-$font-size-medium: 20px;
+$font-size-medium: 22px;
 $font-size-large: 20px;
 
 %font-secondary {
@@ -22,40 +22,40 @@ $font-size-large: 20px;
 
 @font-face {
   font-family: "Merriweather_Light";
-  src: url(/src/assets/fonts/Merriweather-Light.ttf);
+  src: url(@assets/fonts/Merriweather-Light.ttf);
 }
 @font-face {
   font-family: "Merriweather_LightItalic";
-  src: url(/src/assets/fonts/Merriweather-LightItalic.ttf);
+  src: url(@assets/fonts/Merriweather-LightItalic.ttf);
 }
 @font-face {
   //todo: delete
   font-family: "Merriweather_Regular";
-  src: url(/src/assets/fonts/Merriweather-Regular.ttf);
+  src: url(@assets/fonts/Merriweather-Regular.ttf);
 }
 @font-face {
   font-family: "Merriweather_Italic";
-  src: url(/src/assets/fonts/Merriweather-Italic.ttf);
+  src: url(@assets/fonts/Merriweather-Italic.ttf);
 }
 @font-face {
   //todo: delete
   font-family: "Merriweather_Bold";
-  src: url(/src/assets/fonts/Merriweather-Bold.ttf);
+  src: url(@assets/fonts/Merriweather-Bold.ttf);
 }
 @font-face {
   //todo: delete
   font-family: "Merriweather_BoldItalic";
-  src: url(/src/assets/fonts/Merriweather-BoldItalic.ttf);
+  src: url(@assets/fonts/Merriweather-BoldItalic.ttf);
 }
 @font-face {
   font-family: "EBGaramond_Italic";
-  src: url(/src/assets/fonts/EBGaramond-Italic.ttf);
+  src: url(@assets/fonts/EBGaramond-Italic.ttf);
 }
 @font-face {
   font-family: "Inter_Light";
-  src: url(/src/assets/fonts/Inter_18pt-Light.ttf);
+  src: url(@assets/fonts/Inter_18pt-Light.ttf);
 }
 @font-face {
   font-family: "Inter_ExtraLightItalic";
-  src: url(/src/assets/fonts/Inter_18pt-ExtraLightItalic.ttf);
+  src: url(@assets/fonts/Inter_18pt-ExtraLightItalic.ttf);
 }

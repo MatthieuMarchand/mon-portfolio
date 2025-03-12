@@ -2,8 +2,8 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 
-import "../assets/styles/reset.scss";
-import "../assets/styles/global.scss";
+import "@assets/styles/reset.scss";
+import "@assets/styles/global.scss";
 
 const { title, currentGroup, showFooter = true } = Astro.props;
 ---
@@ -28,11 +28,11 @@ const { title, currentGroup, showFooter = true } = Astro.props;
 </html>
 
 <style lang="scss">
-  @use "../assets/styles/v";
+  @use "@assets/styles/v";
 
   main {
     width: 100vw;
-    max-width: 35rem;
+    max-width: 30rem;
     min-height: 100svh;
 
     margin: auto auto;
@@ -52,4 +52,4 @@ const { title, currentGroup, showFooter = true } = Astro.props;
   }
 </style>
 
-<script src="../assets/js/dark-mode"></script>
+<script src="@assets/js/dark-mode"></script>
