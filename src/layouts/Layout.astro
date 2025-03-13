@@ -10,11 +10,17 @@ const { title, currentGroup, showFooter = true } = Astro.props;
 
 <html lang="fr">
   <head>
+    <!--? Primary Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title ? title : "Portfolio"} | Matthieu Marchand</title>
+    <meta name="title" content="Portfolio | Matthieu Marchand" />
+    <meta
+      name="description"
+      content="Développeur web à Bordeaux – Matthieu Marchand | Découvrez mes projets web réalisés en entreprise, durant mes études et sur mon temps libre. Développement front-end, back-end et full-stack. Basé à Bordeaux, originaire de Vendée."
+    />
 
-    <!--? FAVICON -->
+    <!--? Favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -30,6 +36,36 @@ const { title, currentGroup, showFooter = true } = Astro.props;
     />
     <meta name="apple-mobile-web-app-title" content="Matthieu" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <!--? Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://matthieumarchand.fr/" />
+    <meta property="og:title" content="Portfolio | Matthieu Marchand" />
+    <meta
+      property="og:description"
+      content="Développeur web à Bordeaux – Matthieu Marchand | Découvrez mes projets web réalisés en entreprise, durant mes études et sur mon temps libre. Développement front-end, back-end et full-stack. Basé à Bordeaux, originaire de Vendée."
+    />
+    <!-- <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.png"
+    /> -->
+
+    <!--? Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://matthieumarchand.fr/" />
+    <meta property="twitter:title" content="Portfolio | Matthieu Marchand" />
+    <meta
+      property="twitter:description"
+      content="Développeur web à Bordeaux – Matthieu Marchand | Découvrez mes projets web réalisés en entreprise, durant mes études et sur mon temps libre. Développement front-end, back-end et full-stack. Basé à Bordeaux, originaire de Vendée."
+    />
+    <!-- <meta
+      property="twitter:image"
+      content="https://metatags.io/images/meta-tags.png"
+    /> -->
+
+    <!--? Script -->
+    <script type="module" src="/src/assets/js/turbo"></script>
+    <script type="module" src="/src/assets/js/barba.js"></script>
   </head>
   <body>
     <main>
