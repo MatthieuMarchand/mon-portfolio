@@ -1,7 +1,5 @@
 ---
 import groups from "../content/groups.json";
-
-const { currentGroup } = Astro.props;
 ---
 
 <header>
@@ -10,10 +8,7 @@ const { currentGroup } = Astro.props;
       {
         groups.map((group) => (
           <li>
-            <a href={`/groups/${group.slug}/`}>
-              {/* <span>---></span> */}
-              {group.name}
-            </a>
+            <a href={`/groups/${group.slug}/`}>&nbsp;{group.name}</a>
           </li>
         ))
       }
@@ -32,12 +27,45 @@ const { currentGroup } = Astro.props;
 
     @extend %font-secondary;
 
-    nav a {
-      text-transform: lowercase;
+    nav {
+      flex: 1;
+      overflow: hidden;
 
-      span {
-        font-family: v.$font-arrow-large;
-        font-size: 16px;
+      a {
+        display: block;
+        position: relative;
+        text-transform: lowercase;
+        transition: v.$anime-medium ease;
+
+        &.active {
+          transform: translateX(2.5rem);
+        }
+
+        &:hover {
+          transform: translateX(1.5rem);
+
+          &::after {
+            opacity: 1;
+          }
+        }
+
+        &::after {
+          content: "--->"; // forcer espace : \00A0
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          font-family: v.$font-arrow-large;
+          font-size: 16px;
+          transform: translateX(-100%) translateY(3px);
+          transition: v.$anime-short ease;
+          opacity: 0;
+        }
+
+        span {
+          font-family: v.$font-arrow-large;
+          font-size: 16px;
+        }
       }
     }
 
