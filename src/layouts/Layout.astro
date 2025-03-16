@@ -1,11 +1,10 @@
 ---
-import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 
 import "@assets/styles/reset.scss";
 import "@assets/styles/global.scss";
 
-const { title, currentGroup, showFooter = true } = Astro.props;
+const { title, currentGroup } = Astro.props;
 ---
 
 <html lang="fr">
@@ -70,8 +69,6 @@ const { title, currentGroup, showFooter = true } = Astro.props;
       <div class="swup">
         <slot />
       </div>
-
-      {showFooter && <Footer />}
     </main>
   </body>
 </html>
