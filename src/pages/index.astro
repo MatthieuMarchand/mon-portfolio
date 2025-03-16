@@ -64,13 +64,13 @@ import Layout from "../layouts/Layout.astro";
       background-size: cover;
       filter: invert(0);
       opacity: 0;
-      transition: all 0.5s ease-in-out;
+      transition: all v.$anime-medium ease-in-out;
     }
 
     &.dark-mode::after {
       filter: invert(1);
       opacity: 1;
-      transition: all 0.5s ease-out;
+      transition: all v.$anime-medium ease-out;
     }
   }
 

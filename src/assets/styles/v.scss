@@ -14,6 +14,10 @@ $font-size-small: 12px;
 $font-size-medium: 22px;
 $font-size-large: 20px;
 
+$anime-short: 0.25s;
+$anime-medium: 0.5s;
+$anime-long: 1s;
+
 %font-secondary {
   font-family: $font-secondary;
   font-size: $font-size-medium;
