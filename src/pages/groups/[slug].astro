@@ -1,4 +1,5 @@
 ---
+import Ariane from "@components/Ariane.astro";
 import groups from "../../content/groups.json";
 import projects from "../../content/projects.json";
 import Layout from "../../layouts/Layout.astro";
@@ -22,6 +23,8 @@ const filteredProjects = projects.filter((p) => p.group === slug);
 ---
 
 <Layout title={group.name} currentGroup={group}>
+  <Ariane group={group} />
+
   <ul>
     {
       filteredProjects.map((project) => (

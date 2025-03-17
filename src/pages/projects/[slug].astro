@@ -2,6 +2,7 @@
 import projects from "../../content/projects.json";
 import groups from "../../content/groups.json";
 import Layout from "../../layouts/Layout.astro";
+import Ariane from "@components/Ariane.astro";
 
 export async function getStaticPaths() {
   return projects.map((project) => ({
@@ -21,6 +22,8 @@ const group = groups.find((g) => g.slug === project.group);
 ---
 
 <Layout title={project.title} currentGroup={group}>
+  <Ariane group={group} project={project} />
+
   <section>
     <h1>{project.title}</h1>
 
@@ -41,8 +44,6 @@ const group = groups.find((g) => g.slug === project.group);
       )
     }
   </section>
-
-  <a class="retour" href={`/groups/${project.group}/`}>retour</a>
 </Layout>
 
 <style lang="scss">

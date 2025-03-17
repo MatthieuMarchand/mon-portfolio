@@ -1,0 +1,35 @@
+---
+const { group, project = null } = Astro.props;
+---
+
+<nav>
+  <a href="/">Accueil</a>
+
+  <span>-></span>
+
+  <a href={`/groups/${group.slug}`}>{group.name}</a>
+
+  {project != null && (
+      <span>-></span>
+
+      <a href={`/projects/${project.slug}`}>{ project.title }</a>
+  )}
+</nav>
+
+<style lang="scss">
+  @use "@assets/styles/v";
+
+   nav {
+    margin-bottom: 1rem;
+
+    span {
+        font-family: v.$font-arrow-small;
+    }
+
+    a {
+        text-decoration: underline;
+        font-family: v.$font-primary-italic;
+        font-size: v.$font-size-small;
+    }
+   }
+</style>
